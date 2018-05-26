@@ -1,0 +1,124 @@
+﻿<Page x:Class="PairCards_38_Dimitar_Mitev._5by6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PairCards_38_Dimitar_Mitev"
+      mc:Ignorable="d" 
+      DataContext="{Binding RelativeSource={RelativeSource Self}}"
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="_5by6">
+
+    <Border  BorderBrush="Black" BorderThickness="2">
+        <Grid
+        x:Name="gridCards"
+        Background="Bisque"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Border  BorderBrush="Black" Grid.Column="0" BorderThickness="2">
+                <Image x:Name="img0x0" Source="{Binding Current.Cards[0].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="1" BorderThickness="2">
+                <Image x:Name="img0x1" Source="{Binding Current.Cards[1].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="2" BorderThickness="2">
+                <Image x:Name="img0x2" Source="{Binding Current.Cards[2].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="3" BorderThickness="2">
+                <Image x:Name="img0x3" Source="{Binding Current.Cards[3].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="4" BorderThickness="2">
+                <Image x:Name="img0x4" Source="{Binding Current.Cards[4].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="5" Grid.Row="0" BorderThickness="2">
+                <Image x:Name="img0x5" Source="{Binding Current.Cards[5].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="0" Grid.Row="1" BorderThickness="2">
+                <Image x:Name="img1x0" Source="{Binding Current.Cards[6].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="1" Grid.Row="1" BorderThickness="2">
+                <Image x:Name="img1x1" Source="{Binding Current.Cards[7].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="2" Grid.Row="1" BorderThickness="2">
+                <Image x:Name="img1x2" Source="{Binding Current.Cards[8].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="3" Grid.Row="1" BorderThickness="2">
+                <Image x:Name="img1x3" Source="{Binding Current.Cards[9].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="4" Grid.Row="1" BorderThickness="2">
+                <Image x:Name="img1x4" Source="{Binding Current.Cards[10].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="5" Grid.Row="1" BorderThickness="2">
+                <Image x:Name="img1x5" Source="{Binding Current.Cards[11].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="0" Grid.Row="2" BorderThickness="2">
+                <Image x:Name="img2x0" Source="{Binding Current.Cards[12].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="1" Grid.Row="2" BorderThickness="2">
+                <Image x:Name="img2x1" Source="{Binding Current.Cards[13].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="2" Grid.Row="2" BorderThickness="2">
+                <Image x:Name="img2x2" Source="{Binding Current.Cards[14].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="3" Grid.Row="2" BorderThickness="2">
+                <Image x:Name="img2x3" Source="{Binding Current.Cards[15].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="4" Grid.Row="2" BorderThickness="2">
+                <Image x:Name="img2x4" Source="{Binding Current.Cards[16].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="5" Grid.Row="2" BorderThickness="2">
+                <Image x:Name="img2x5" Source="{Binding Current.Cards[17].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="0" Grid.Row="3" BorderThickness="2">
+                <Image x:Name="img3x0" Source="{Binding Current.Cards[18].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="1" Grid.Row="3" BorderThickness="2">
+                <Image x:Name="img3x1" Source="{Binding Current.Cards[19].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="2" Grid.Row="3" BorderThickness="2">
+                <Image x:Name="img3x2" Source="{Binding Current.Cards[20].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="3" Grid.Row="3" BorderThickness="2">
+                <Image x:Name="img3x3" Source="{Binding Current.Cards[21].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="4" Grid.Row="3" BorderThickness="2">
+                <Image x:Name="img3x4" Source="{Binding Current.Cards[22].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="5" Grid.Row="3" BorderThickness="2">
+                <Image x:Name="img3x5" Source="{Binding Current.Cards[23].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="0" Grid.Row="4" BorderThickness="2">
+                <Image x:Name="img4x0" Source="{Binding Current.Cards[24].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="1" Grid.Row="4" BorderThickness="2">
+                <Image x:Name="img4x1" Source="{Binding Current.Cards[25].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="2" Grid.Row="4" BorderThickness="2">
+                <Image x:Name="img4x2" Source="{Binding Current.Cards[26].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="3" Grid.Row="4" BorderThickness="2">
+                <Image x:Name="img4x3" Source="{Binding Current.Cards[27].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="4" Grid.Row="4" BorderThickness="2">
+                <Image x:Name="img4x4" Source="{Binding Current.Cards[28].See}" MouseDown="card_click"/>
+            </Border>
+            <Border  BorderBrush="Black" Grid.Column="5" Grid.Row="4" BorderThickness="2">
+                <Image x:Name="img4x5" Source="{Binding Current.Cards[29].See}" MouseDown="card_click"/>
+            </Border>
+        </Grid>
+    </Border>
+</Page>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="PairCards_38_Dimitar_Mitev.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PairCards_38_Dimitar_Mitev"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="625"
+        ResizeMode="NoResize">
+    <StackPanel Orientation="Horizontal">
+        <Frame x:Name="myFrame" Width="450"
+               Height="600"
+               Padding="20,0,0,20"
+               NavigationUIVisibility="Hidden"/>
+        <Button Content="New game" x:Name="btnNew" Grid.Column="2" HorizontalAlignment="Left" Margin="35,20,-120,0" VerticalAlignment="Top" Width="95" Click="btnNew_Click"/>
+        <Label x:Name="lblCurrentTime" Content="Time:" Margin="5,25,-100,375" Height="30"/>
+        <Label x:Name="txtCurrentTime" Content="--/--/--" Margin="5,25,-100,325" Height="30"/>
+        <Label x:Name="lblCurrentRecord" Content="Record:" Margin="5,25,-100,265" Height="30"/>
+        <Label x:Name="txtCurrentRecord" Content="--/--/--" Margin="5,25,-100,215" Height="30"/>
+        <GroupBox Header="Grid size" Margin="5,45,-100,495">
+            <StackPanel Orientation="Vertical">
+                <RadioButton x:Name="rbtn5x5" Content="5x5"/>
+                <RadioButton x:Name="rbtn5x6" Content="5x6"/>
+                <RadioButton x:Name="rbtn6x6" Content="6x6"/>
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Window>
