@@ -60,9 +60,6 @@ namespace PairCards_38_Dimitar_Mitev
                 TimeSpan ts = time.Elapsed;
                 record = ts;
                 txtCurrentRecord.Content = String.Format("{0:00}:{1:00}:{2:00}", ts.Hours, ts.Minutes, ts.Seconds);
-            }else
-            {
-                txtCurrentRecord.Content += "+";
             }
         }
         private void SetupGame5x5()

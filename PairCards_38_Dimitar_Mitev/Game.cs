@@ -17,6 +17,7 @@ namespace PairCards_38_Dimitar_Mitev
         int cardsCount;
         private int done = 0;
         public List<BitmapImage> FreeCards = new List<BitmapImage>();
+        Random rnd = new Random();
 
         public Game(String size)
         {
@@ -105,7 +106,6 @@ namespace PairCards_38_Dimitar_Mitev
         }
         public BitmapImage GetAFace()
         {
-            Random rnd = new Random();
             int pos = rnd.Next(0, FreeCards.Count);
             BitmapImage n= FreeCards[pos];
             FreeCards.RemoveAt(pos);
@@ -114,7 +114,6 @@ namespace PairCards_38_Dimitar_Mitev
         public void setACard(BitmapImage d,int cards)
         {
             int position=0;
-            Random rnd = new Random();
             do
             {
                 position = rnd.Next(0,cards);
