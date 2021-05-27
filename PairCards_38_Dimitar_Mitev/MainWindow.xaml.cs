@@ -61,6 +61,15 @@ namespace PairCards_38_Dimitar_Mitev
                 record = ts;
                 txtCurrentRecord.Content = String.Format("{0:00}:{1:00}:{2:00}", ts.Hours, ts.Minutes, ts.Seconds);
             }
+            
+            //mustafa koca adding -1
+            MessageBox.Show("completed successfully!") //bittiğinde çıkar
+             
+            //mustafa koca adding -2
+            SoundPlayer player = new SoundPlayer("beep.wav");
+            player.Load();
+            player.Play();
+             //------------------------------------------------------------------------------------------------------
         }
         private void SetupGame5x5()
         {
